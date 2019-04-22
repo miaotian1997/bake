@@ -1,0 +1,127 @@
+.container{
+  padding:0;
+  margin:0;
+}
+/*图片*/
+.pian image{
+  height:180px;
+  width:100%;
+}
+.pian .tes{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  color:#313131;
+  padding:10px;
+}
+/*试看*/
+.ren{
+  height:27px;
+  margin-bottom:10px;
+}
+.ren .left{
+  margin-left:3%;
+  display:inline-block;
+}
+.ren .left image{
+  width:27px;
+  height:27px;
+  position:relative;
+  top:7px;
+}
+.ren .left text{
+  font-size: 13px;
+  line-height:26px;
+}
+.ren .left text:nth-child(2){
+  color:#E98B71;
+}
+.ren .right image{
+  width:19px;
+  height:19px;
+  position:relative;
+  top:1px;
+  padding:2px;
+}
+.ren .right{
+  width: 83px;
+  height: 25px;
+  font-size:14px;
+  border:1px solid #E98B71;
+  border-radius:4px;
+  display:inline-block;
+  margin-left:41%;
+}
+.ren .right text{
+  color: #E98B71;
+  text-align: center;
+  position: relative;
+  top:-5px;
+}
+/*空白*/
+.black{
+  height:10px;
+  background-color:#f5f7f9; 
+}
+/*第二部分*/
+.ff{
+  margin-top:5px;
+  margin-bottom:5px;
+  font-size:13px;
+  line-height:18px;
+  color:#676767;
+  font-weight:200;
+  margin-left:15px;
+}
+.ff text{
+  margin-right: 15px;
+}
+/*详情*/
+.name{
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #313131;
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left:15px;
+  margin-right:15px;
+}
+.name text{
+  font-size:16px;
+  line-height:18px;
+  color:#313131;
+  font-weight:400;
+}
+/*底部*/
+.xue{
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 15px;
+}
+.xue image:first-child{
+  width:130px;
+  height:56px;
+}
+.xue view{
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 22px;
+  color: #313131;
+  margin-bottom:10px;
+}
+.xue .pei{
+  display: flex;
+  justify-content:space-around;
+  margin-bottom:0;
+}
+.xue .pei image{
+  width: 50px;
+  height: 58px;
+}
+.xue .ziti{
+  display: flex;
+  justify-content:space-around;
+  color:#313131;
+  font-weight: 400;
+}

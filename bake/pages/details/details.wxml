@@ -1,0 +1,79 @@
+<view class='container'>
+  <!-- 第一部分 -->
+  <view>
+    <!-- 图片标题 -->
+    <view class="pian" wx:for="{{imglist}}" wx:key="index">
+      <image src="http://127.0.0.1:3000/{{item.img}}" lazy-load='true' mode='aspectFill'></image>
+      <view class="tes">{{item.titile}}</view>
+    </view>
+    <!-- 试看课程 -->
+    <view class="ren">
+      <!-- 左 -->
+      <view class="left">
+        <image src="../img/ren.png"></image>
+        <text>1000+</text>
+        <text>人在学</text>
+      </view>
+        <!-- 右 -->
+        <view class="right">
+          <image src="../img/v.png"></image>
+          <text>试看课程</text>
+        </view>
+    </view>
+  </view>
+  <view class="black"></view>
+  <!-- 第二部分 -->
+  <view class="ff">
+    <!-- 上 -->
+    <view class="shang">
+      <text>永久无限次回看</text> 
+      <text>购买后即看</text> 
+      <text>烘焙帮自营课程</text> 
+    </view>
+    <!-- 下 -->
+    <view class='xia'>
+      <text>高效的学习体验</text> 
+      <text>分步骤学习</text> 
+      <text>专注打造唯一品类</text>     
+    </view>
+  </view>
+  <view class="black"></view>
+  <!-- 第三部分 -->
+  <view>
+    <view class='name'>你将学会
+      <text>{{products[0].title}}</text>
+    </view> 
+  </view>
+  <view class="black"></view>
+  <!-- 第四部分 -->
+  <view>
+    <view class='name'>课程介绍
+      <text>{{products[0].title1}}</text>
+    </view>
+  </view>  
+  <view class="black"></view>
+  <!-- 如何学习 -->
+  <view>
+    <view class='name'>如何学习
+      <text>{{products[0].title2}}</text>
+    </view>
+  </view>  
+  <view class="black"></view>
+  <!-- 培培帮学堂 -->
+  <view class='xue'>
+    <image src="../img/xue.png"></image>
+    <view>烘焙帮学堂，是由烘焙帮推出的课程品牌。通过官方自制的教学视频，用最成功的烘焙配方、最细致的步骤讲解、最贴心的导师服务，让你烘焙100%成功！</view>
+    <view class="pei">
+      <image src="../img/1.png"></image>
+      <image src="../img/2.png"></image>
+      <image src="../img/3.png"></image>
+      <image src="../img/4.png"></image>
+    </view>
+    <view class='ziti'>
+      <text>蛋糕</text>
+      <text>甜品点心</text>
+      <text>面包</text>
+      <text>中式点心</text>
+    </view>
+  </view>
+</view>

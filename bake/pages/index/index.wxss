@@ -1,0 +1,104 @@
+/* pages/index/index.wxss */
+.container{
+  padding: 0;
+}
+/*搜索*/
+.sou{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin:10px 10px; 
+  width:100%;
+
+}
+.sou .jia{
+  height: 28px;
+  width:28px;
+}
+.sou input{
+  font-size:13px;
+  width:70%;
+  border: 1px solid #999;
+  border-radius:10px 10px 10px 10px;
+  padding-left:5px; 
+}
+.sou button{
+  width: 45px;
+  height: 60rpx;
+  font-size: 14px;
+  line-height: 60rpx;
+  border: 0px;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+/*轮播*/
+.slider,.slider swiper,.slider image{
+  height: 350rpx;
+  width: 100%;
+}
+/*2.九宫格  */
+/*2.1 父元素  */
+.index-nav{
+  display: flex;  /*弹性布局*/
+  flex-wrap: wrap;  /*换行*/
+  width: 100%;
+}
+/*2.2 子元素 */
+.nav-item{
+  width: 33.33333%;
+  height: 110rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /*居中水平*/
+  align-items: center;  /*垂直*/
+  font-size: 12px;
+}
+/*2.3:小图片  */
+.nav-item image{
+  width:35px !important;
+  height:35px !important;
+}
+/*课堂精选*/
+.school{
+  margin-top:5px;
+  height:280px;
+  margin-left: 4%;
+}
+.huadong{ 
+  height: 269px;
+  width:100%;
+  display: flex;
+  white-space: nowrap;
+}
+.school view{
+  font-size:16px;
+  font-weight:bold;
+}
+.huadong .pic image{
+  margin-top: 5px;
+  height:225px;
+  width:160px;
+  border-radius:3px;
+}
+.pic .aa{
+  color:#4A4945;
+  font-size:14px;
+  width: 160px;
+  height:40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.pic{
+  /* height:275px; */
+  width:160px;
+  display:inline-block;
+  margin-left: 10px;
+}
+.huadong .pic:first-child{
+  margin-left: 0;
+}
+.huadong .pic:last-child{
+  margin-right:10px;
+}

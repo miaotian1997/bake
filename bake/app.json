@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#90c5bc",
+    "navigationBarTitleText": "培培小屋",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/shou.png",
+        "selectedIconPath": "pages/img/shou_active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "学堂",
+        "iconPath": "pages/img/quan.png",
+        "selectedIconPath": "pages/img/quan_active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

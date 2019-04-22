@@ -1,0 +1,38 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="sou">
+    <image class="jia" src="../img/add.png"></image>
+    <input placeholder="搜索菜谱、食材"></input>
+    <button>搜索</button>
+  </view>
+  <!-- 轮播图 -->
+  <view class="slider">
+    <swiper autoplay='3000'>
+      <swiper-item wx:for="{{imglist}}" wx:key="index" wx:if="{{index<5}}">
+        <image src="http://127.0.0.1:3000/{{item.img}}" lazy-load='true' mode='aspectFill'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 九宫格 -->
+  <view class="index-nav">
+    <!-- 第一个格 -->
+    <view class="nav-item" wx:for="{{imglist}}" wx:key="index" wx:if="{{index>=5}}">
+      <image class="nav" src="http://127.0.0.1:3000/{{item.img}}" lazy-load='true' mode='aspectFill'></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+</view>
+<!-- 学堂精选 -->
+<view class="school">
+  <view>课堂精选</view>
+  <scroll-view class="huadong" scroll-x="true">
+    <view  class="pic" wx:key="index" wx:for="{{products}}"data-list="{{item.id}}" bindtap='details'> 
+      <view class="jing">
+        <image src="http://127.0.0.1:3000/{{item.pic}}" lazy-load='true' mode='aspectFill'data-list="{{item.id}}" bindtap='details'></image>
+        <view class="aa">{{item.title}}</view>
+      </view>  
+    </view>
+  </scroll-view>
+  
+</view>
